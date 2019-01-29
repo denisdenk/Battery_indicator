@@ -224,12 +224,14 @@ float map(float x, float in_min, float in_max, float out_min, float out_max) {
 }
 
 void UART_Send(char data) {
+	
 	while(!( UCSRA & (1 << UDRE)));   // Ожидаем когда очистится буфер передачи
 	UDR = data; // Помещаем данные в буфер, начинаем передачу
 }
 
 // Функция передачи строки по USART
 void STR_UART_Send(char *string) {
+
 	while(*string != '\0') {
 		UART_Send(*string);
 		string++;
