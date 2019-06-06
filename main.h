@@ -9,6 +9,8 @@
 #ifndef INC_MAIN_H_
 #define INC_MAIN_H_
 
+#define F_CPU 1000000UL
+
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
@@ -17,8 +19,8 @@
 #include "stdio.h"
 #include "stdbool.h"
 
-#define BAUDRATE 1200L  // РЎРєРѕСЂРѕСЃС‚СЊ РѕР±РјРµРЅР° РґР°РЅРЅС‹РјРё РїРѕ UART
-#define PWM_Pin PB1	// РџРёРЅ РґР»СЏ РѕРґРєР»СЋС‡РµРЅРёСЏ Mosfet
+#define BAUDRATE 1200L  // Скорость обмена данными по UART
+#define PWM_Pin PB1	// Пин для одключения Mosfet
 
 uint8_t counter = 0;
 uint8_t timer = 0;
