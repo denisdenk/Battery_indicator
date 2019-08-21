@@ -1,5 +1,5 @@
 /*
- * FUSES: HIGH 0xDE; LOW 0xFF (16MHz External Crystal)
+ * FUSES: HIGH 0xDE; LOW 0xFF (16MHz External Crystal FOR atmega 8)
  */
 
 
